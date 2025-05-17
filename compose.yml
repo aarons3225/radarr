@@ -1,9 +1,9 @@
 services:
-  radarr:
-    container_name: radarr
+  radarr4k:
+    container_name: radarr4k
     image: lscr.io/linuxserver/radarr:latest
     ports:
-      - 7878:7878
+      - 7874:7874
     environment:
       - PUID=1000
       - PGID=1000
