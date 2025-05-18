@@ -11,7 +11,7 @@ services:
       - TZ=America/Phoenix
     volumes:
       - ./config:/config
-      - /mnt/data/:/data
+      - /mnt/data/:/data:rw
       - /var/run/docker.sock:/var/run/docker.sock:ro
     restart: unless-stopped
     networks:
